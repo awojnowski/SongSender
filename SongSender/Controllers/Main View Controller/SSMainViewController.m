@@ -114,11 +114,12 @@
     NSString *songName = [NSString stringWithFormat:@"%@.m4a",title];
     
     NSURL *url = [item valueForProperty: MPMediaItemPropertyAssetURL];
-    AVURLAsset *songAsset = [AVURLAsset URLAssetWithURL:url options:nil];
+    AVURLAsset *asset = [AVURLAsset URLAssetWithURL:url options:nil];
     
-    AVAssetExportSession *exporter = [[AVAssetExportSession alloc] initWithAsset:songAsset presetName:AVAssetExportPresetAppleM4A];
+    AVAssetExportSession *exporter = [[AVAssetExportSession alloc] initWithAsset:asset presetName:AVAssetExportPresetAppleM4A];
     [exporter setOutputFileType:@"com.apple.m4a-audio"];
     [exporter setOutputURL:[SSFileManager temporaryFileURLWithName:songName]];
+    [exporter setMetadata:[self metadataFromMediaItem:item]];
     [exporter exportAsynchronouslyWithCompletionHandler:^{
         
         dispatch_async(dispatch_get_main_queue(), ^(void) {
@@ -160,6 +161,26 @@
         });
         
     }];
+    
+}
+
+-(NSArray *)metadataFromMediaItem:(MPMediaItem *)item {
+    
+    NSMutableArray *array = [NSMutableArray array];
+    [array addObject:[self metaDataItemWithKey:AVMetadataCommonKeyTitle value:[item valueForProperty:MPMediaItemPropertyTitle]]];
+    [array addObject:[self metaDataItemWithKey:AVMetadataCommonKeyArtist value:[item valueForProperty:MPMediaItemPropertyArtist]]];
+    [array addObject:[self metaDataItemWithKey:AVMetadataCommonKeyAlbumName value:[item valueForProperty:MPMediaItemPropertyAlbumTitle]]]; 
+    return array;
+    
+}
+
+-(AVMetadataItem *)metaDataItemWithKey:(NSString *)key value:(NSString *)value {
+    
+    AVMutableMetadataItem *metadata = [[AVMutableMetadataItem alloc] init];
+    metadata.keySpace = AVMetadataKeySpaceCommon;
+    metadata.key = key;
+    metadata.value = value;
+    return metadata;
     
 }
 
