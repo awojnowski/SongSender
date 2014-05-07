@@ -7,18 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		930A1E62191AD7AC001BB1E7 /* SSFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 930A1E61191AD7AC001BB1E7 /* SSFileManager.m */; };
 		93D6D079191AD6D1002A553D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D6D078191AD6D1002A553D /* Foundation.framework */; };
 		93D6D07B191AD6D1002A553D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D6D07A191AD6D1002A553D /* CoreGraphics.framework */; };
 		93D6D07D191AD6D1002A553D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D6D07C191AD6D1002A553D /* UIKit.framework */; };
-		93D6D083191AD6D1002A553D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93D6D081191AD6D1002A553D /* InfoPlist.strings */; };
-		93D6D085191AD6D1002A553D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D6D084191AD6D1002A553D /* main.m */; };
-		93D6D089191AD6D1002A553D /* SSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D6D088191AD6D1002A553D /* SSAppDelegate.m */; };
-		93D6D08B191AD6D1002A553D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93D6D08A191AD6D1002A553D /* Images.xcassets */; };
 		93D6D092191AD6D1002A553D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D6D091191AD6D1002A553D /* XCTest.framework */; };
 		93D6D093191AD6D1002A553D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D6D078191AD6D1002A553D /* Foundation.framework */; };
 		93D6D094191AD6D1002A553D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D6D07C191AD6D1002A553D /* UIKit.framework */; };
 		93D6D09C191AD6D1002A553D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93D6D09A191AD6D1002A553D /* InfoPlist.strings */; };
 		93D6D09E191AD6D1002A553D /* SongSenderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D6D09D191AD6D1002A553D /* SongSenderTests.m */; };
+		93D6D0B3191AD6ED002A553D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93D6D0AA191AD6ED002A553D /* InfoPlist.strings */; };
+		93D6D0B4191AD6ED002A553D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93D6D0AC191AD6ED002A553D /* Images.xcassets */; };
+		93D6D0B5191AD6ED002A553D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D6D0AD191AD6ED002A553D /* main.m */; };
+		93D6D0B7191AD6ED002A553D /* SSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D6D0B1191AD6ED002A553D /* SSAppDelegate.m */; };
+		93D6D0BB191AD70A002A553D /* SSMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D6D0BA191AD70A002A553D /* SSMainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,22 +34,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		930A1E60191AD7AC001BB1E7 /* SSFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSFileManager.h; sourceTree = "<group>"; };
+		930A1E61191AD7AC001BB1E7 /* SSFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSFileManager.m; sourceTree = "<group>"; };
 		93D6D075191AD6D1002A553D /* SongSender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SongSender.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93D6D078191AD6D1002A553D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		93D6D07A191AD6D1002A553D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		93D6D07C191AD6D1002A553D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		93D6D080191AD6D1002A553D /* SongSender-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SongSender-Info.plist"; sourceTree = "<group>"; };
-		93D6D082191AD6D1002A553D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		93D6D084191AD6D1002A553D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		93D6D086191AD6D1002A553D /* SongSender-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SongSender-Prefix.pch"; sourceTree = "<group>"; };
-		93D6D087191AD6D1002A553D /* SSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSAppDelegate.h; sourceTree = "<group>"; };
-		93D6D088191AD6D1002A553D /* SSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSAppDelegate.m; sourceTree = "<group>"; };
-		93D6D08A191AD6D1002A553D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		93D6D090191AD6D1002A553D /* SongSenderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SongSenderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93D6D091191AD6D1002A553D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		93D6D099191AD6D1002A553D /* SongSenderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SongSenderTests-Info.plist"; sourceTree = "<group>"; };
 		93D6D09B191AD6D1002A553D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		93D6D09D191AD6D1002A553D /* SongSenderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SongSenderTests.m; sourceTree = "<group>"; };
+		93D6D0AB191AD6ED002A553D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		93D6D0AC191AD6ED002A553D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		93D6D0AD191AD6ED002A553D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		93D6D0AE191AD6ED002A553D /* SongSender-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SongSender-Info.plist"; sourceTree = "<group>"; };
+		93D6D0AF191AD6ED002A553D /* SongSender-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SongSender-Prefix.pch"; sourceTree = "<group>"; };
+		93D6D0B0191AD6ED002A553D /* SSAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSAppDelegate.h; sourceTree = "<group>"; };
+		93D6D0B1191AD6ED002A553D /* SSAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSAppDelegate.m; sourceTree = "<group>"; };
+		93D6D0B9191AD70A002A553D /* SSMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSMainViewController.h; sourceTree = "<group>"; };
+		93D6D0BA191AD70A002A553D /* SSMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSMainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,23 +113,12 @@
 		93D6D07E191AD6D1002A553D /* SongSender */ = {
 			isa = PBXGroup;
 			children = (
-				93D6D087191AD6D1002A553D /* SSAppDelegate.h */,
-				93D6D088191AD6D1002A553D /* SSAppDelegate.m */,
-				93D6D08A191AD6D1002A553D /* Images.xcassets */,
-				93D6D07F191AD6D1002A553D /* Supporting Files */,
+				93D6D0A8191AD6ED002A553D /* Models */,
+				93D6D0B2191AD6ED002A553D /* Views */,
+				93D6D0A7191AD6ED002A553D /* Controllers */,
+				93D6D0A9191AD6ED002A553D /* Supporting Files */,
 			);
 			path = SongSender;
-			sourceTree = "<group>";
-		};
-		93D6D07F191AD6D1002A553D /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				93D6D080191AD6D1002A553D /* SongSender-Info.plist */,
-				93D6D081191AD6D1002A553D /* InfoPlist.strings */,
-				93D6D084191AD6D1002A553D /* main.m */,
-				93D6D086191AD6D1002A553D /* SongSender-Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		93D6D097191AD6D1002A553D /* SongSenderTests */ = {
@@ -142,6 +137,53 @@
 				93D6D09A191AD6D1002A553D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		93D6D0A7191AD6ED002A553D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				93D6D0B8191AD704002A553D /* Main View Controller */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		93D6D0A8191AD6ED002A553D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				930A1E60191AD7AC001BB1E7 /* SSFileManager.h */,
+				930A1E61191AD7AC001BB1E7 /* SSFileManager.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		93D6D0A9191AD6ED002A553D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				93D6D0AA191AD6ED002A553D /* InfoPlist.strings */,
+				93D6D0AC191AD6ED002A553D /* Images.xcassets */,
+				93D6D0AD191AD6ED002A553D /* main.m */,
+				93D6D0AE191AD6ED002A553D /* SongSender-Info.plist */,
+				93D6D0AF191AD6ED002A553D /* SongSender-Prefix.pch */,
+				93D6D0B0191AD6ED002A553D /* SSAppDelegate.h */,
+				93D6D0B1191AD6ED002A553D /* SSAppDelegate.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		93D6D0B2191AD6ED002A553D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		93D6D0B8191AD704002A553D /* Main View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				93D6D0B9191AD70A002A553D /* SSMainViewController.h */,
+				93D6D0BA191AD70A002A553D /* SSMainViewController.m */,
+			);
+			path = "Main View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,8 +262,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93D6D083191AD6D1002A553D /* InfoPlist.strings in Resources */,
-				93D6D08B191AD6D1002A553D /* Images.xcassets in Resources */,
+				93D6D0B4191AD6ED002A553D /* Images.xcassets in Resources */,
+				93D6D0B3191AD6ED002A553D /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,8 +282,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93D6D089191AD6D1002A553D /* SSAppDelegate.m in Sources */,
-				93D6D085191AD6D1002A553D /* main.m in Sources */,
+				93D6D0BB191AD70A002A553D /* SSMainViewController.m in Sources */,
+				93D6D0B7191AD6ED002A553D /* SSAppDelegate.m in Sources */,
+				93D6D0B5191AD6ED002A553D /* main.m in Sources */,
+				930A1E62191AD7AC001BB1E7 /* SSFileManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,18 +308,18 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		93D6D081191AD6D1002A553D /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				93D6D082191AD6D1002A553D /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		93D6D09A191AD6D1002A553D /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				93D6D09B191AD6D1002A553D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		93D6D0AA191AD6ED002A553D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93D6D0AB191AD6ED002A553D /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -359,8 +403,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SongSender/SongSender-Prefix.pch";
-				INFOPLIST_FILE = "SongSender/SongSender-Info.plist";
+				GCC_PREFIX_HEADER = "SongSender/Supporting Files/SongSender-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/SongSender/Supporting Files/SongSender-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -372,8 +416,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SongSender/SongSender-Prefix.pch";
-				INFOPLIST_FILE = "SongSender/SongSender-Info.plist";
+				GCC_PREFIX_HEADER = "SongSender/Supporting Files/SongSender-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/SongSender/Supporting Files/SongSender-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -438,6 +482,7 @@
 				93D6D0A3191AD6D1002A553D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		93D6D0A4191AD6D1002A553D /* Build configuration list for PBXNativeTarget "SongSenderTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +491,7 @@
 				93D6D0A6191AD6D1002A553D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
